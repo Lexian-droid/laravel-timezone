@@ -1,5 +1,5 @@
 {
-    "name": "jamesmills/laravel-timezone",
+    "name": "lexiandev/laravel-timezone",
     "license": "MIT",
     "description": "Timezone storage and retrieval for Laravel",
     "keywords": [
@@ -10,29 +10,33 @@
         {
             "name": "James Mills",
             "email": "james@jamesmills.co.uk"
+        },
+        {
+            "name": "Lexian",
+            "email": "dev@lexian.dev"
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "laravel/framework": "5.6.*|5.7.*|5.8.*|^6|^7|^8|^9|^10.0|^11.0",
-        "torann/geoip": "^3.0",
-        "nesbot/carbon": "^1.0|^2.0|^3.0"
+        "php": ">=8.2",
+        "laravel/framework": "^11.0",
+        "torann/geoip": "^3.0.7",
+        "nesbot/carbon": "^3.0|^3.2"
     },
     "autoload": {
         "psr-4": {
-            "JamesMills\\LaravelTimezone\\": "src/",
-            "JamesMills\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+            "Lexiandev\\LaravelTimezone\\": "src/",
+            "Lexiandev\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JamesMills\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+                "Lexiandev\\LaravelTimezone\\LaravelTimezoneServiceProvider"
             ]
         }
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.12|^3.14"
+        "friendsofphp/php-cs-fixer": "^3.50|^3.52"
     },
     "scripts": {
         "pre-package-install": [
